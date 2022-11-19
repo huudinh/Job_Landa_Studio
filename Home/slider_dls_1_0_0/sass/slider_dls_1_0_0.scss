@@ -1,0 +1,19 @@
+.slider_dls_1_0_0 {
+    font-family: var(--primary-font);
+    position: relative;
+    img{
+        width: 100%;
+    }
+    &__box {
+        animation: fadeInUp 1.5s;
+        padding-top: 20px;
+        color: white;
+        position: absolute;
+        bottom:100px;
+        left:10%;
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 60px;
+        letter-spacing: 0.06em;
+    }
+}
