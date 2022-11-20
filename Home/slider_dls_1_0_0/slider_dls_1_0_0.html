@@ -12,11 +12,31 @@
 
 <body>
     <section class="slider_dls_1_0_0">
-        <img src="images/slider.jpg" alt="slider" />
-        <div class="slider_dls_1_0_0__box">
-            Luxury Scandinavian
+        <div class="slider__content" >
+            <div class="slider__control" >
+                <div onclick="changeSlide(-1)" class="slider__controlLeft"></div>
+                <div onclick="changeSlide(1)" class="slider__controlRight"></div>
+            </div>
         </div>
     </section>
+    <script>
+        let slides = [
+            {
+                link:'images/slider.jpg',
+                text:'Luxury Scandinavian',
+            },
+            {
+                link:'images/slider.jpg',
+                text:'Luxury Scandinavian',
+            },
+            {
+                link:'images/slider.jpg',
+                text:'Luxury Scandinavian',
+            },
+            
+        ];
+    </script>
+    <script src="js/slider_dls_1_0_0.js"></script>
 </body>
 
 </html>

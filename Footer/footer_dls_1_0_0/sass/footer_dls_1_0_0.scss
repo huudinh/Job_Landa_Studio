@@ -1,0 +1,58 @@
+.footer_dls_1_0_0 {
+    background: url(../images/ft-bg.jpg) center 0 no-repeat;
+    padding: 30px 0;
+    font-family: var(--primary-font);
+    min-height: 640px;
+    display: flex;
+    align-items: center;
+    font-size:14px;
+    &__top {
+        display: flex;
+    }
+    &__logo {
+        img {
+            height: auto;
+        }
+    }
+    &__social{
+        margin:20px 0;
+        img{
+            margin:5px 10px 5px 0;
+            transition: .3s;
+            &:hover{
+                opacity: 0.6;
+            }
+        }
+    }
+    &__col{
+        width:calc(100% / 3);
+    }
+    &__info {
+        margin-bottom: 20px;
+    }
+    &__title{
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-size:16px;
+    }
+    &__form{
+        width: 80%;
+        margin:0;
+        input, textarea{
+            width:100%;
+            margin:5px 0;
+            padding:5px;
+            background:none;
+            color:#fff;
+            border:1px solid #fff;
+        }
+        button{
+            background:none;
+            border:1px solid #fff;
+            color:#fff;
+            padding:5px 10px;
+            cursor: pointer;
+        }
+    }
+   
+}
