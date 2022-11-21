@@ -166,6 +166,58 @@
                 nav:false
             });
         </script>
+
+        <!-- project_dls_1_0_0 -->
+        <link rel="stylesheet" href="Home/project_dls_1_0_0/sass/project_dls_1_0_0.min.css">
+        <section class="project_dls_1_0_0 ">
+            <div class="container">
+                <div class="main_dls_1_0_0__title">Signature Projects</div>
+                <div class="main_dls_1_0_0__line"></div>
+                <div id="project_dls_1_0_0__content" class="project_dls_1_0_0__content"></div>
+                <div class="project_dls_1_0_0__more">MORE PROJECTS</div>
+            </div>
+        </section>
+        <script>
+            const data = [
+                {
+                    name: "Tay Ho Residence",
+                    place: "HANOI, VIETNAM",
+                    photo: "Home/project_dls_1_0_0/images/pic-1.jpg",
+                    des: "Duis varius, ante ut consectetur auctor, lacus ligula ultricies ante, et interdum magna turpis at dolor. Maecenas aliquam non neque id consequat. Vestibulum luctus vestibulum massa, et congue leo pulvinar ac.",
+                },
+                {
+                    name: "Blue Ocean Villa",
+                    place: "DANANG, VIETNAM",
+                    photo: "Home/project_dls_1_0_0/images/pic-2.jpg",
+                    des: "Donec erat lacus, ultrices ut est eget, efficitur vehicula augue. Integer a purus ultrices, scelerisque tortor ac, dignissim justo.",
+                },
+                {
+                    name: "Sky Penthouse",
+                    place: "HCMC, VIETNAM",
+                    photo: "Home/project_dls_1_0_0/images/pic-3.jpg",
+                    des: "Suspendisse et mauris odio. Etiam tincidunt tempor lorem, a feugiat metus lobortis id. Integer sit amet ipsum eget nisi venenatis ullamcorper. Sed at pharetra neque.",
+                },
+                {
+                    name: "Tay Ho Residence",
+                    place: "HANOI, VIETNAM",
+                    photo: "Home/project_dls_1_0_0/images/pic-1.jpg",
+                    des: "Duis varius, ante ut consectetur auctor, lacus ligula ultricies ante, et interdum magna turpis at dolor. Maecenas aliquam non neque id consequat. Vestibulum luctus vestibulum massa, et congue leo pulvinar ac.",
+                },
+                {
+                    name: "Blue Ocean Villa",
+                    place: "DANANG, VIETNAM",
+                    photo: "Home/project_dls_1_0_0/images/pic-2.jpg",
+                    des: "Donec erat lacus, ultrices ut est eget, efficitur vehicula augue. Integer a purus ultrices, scelerisque tortor ac, dignissim justo.",
+                },
+                {
+                    name: "Sky Penthouse",
+                    place: "HCMC, VIETNAM",
+                    photo: "Home/project_dls_1_0_0/images/pic-3.jpg",
+                    des: "Suspendisse et mauris odio. Etiam tincidunt tempor lorem, a feugiat metus lobortis id. Integer sit amet ipsum eget nisi venenatis ullamcorper. Sed at pharetra neque.",
+                },
+            ];
+        </script>
+        <script src="Home/project_dls_1_0_0/js/project_dls_1_0_0.js"></script>
     </main>
 
     <link rel="stylesheet" href="Home/video_sci_1_0_0/sass/video_sci_1_0_0.css">
@@ -436,66 +488,55 @@
             </div>
         </div>
     </section>
-    <link rel="stylesheet" href="Footer/footer_sci_1_0_0/sass/footer_sci_1_0_0.css">
-    <footer class="footer_sci_1_0_0 load">
+    <link rel="stylesheet" href="Footer/footer_dls_1_0_0/sass/footer_dls_1_0_0.min.css">
+    <footer class="footer_dls_1_0_0">
         <div class="container">
-            <div class="footer_sci_1_0_0__box">
-                <div class="footer_sci_1_0_0__top">
-                    <div class="footer_sci_1_0_0__logo">
-                        <img width="215" height="111" src="images/ft-logo.svg" alt="">
+            <div class="footer_dls_1_0_0__box">
+                <div class="footer_dls_1_0_0__top">                                        
+                    <div class="footer_dls_1_0_0__col">
+                        <div class="footer_dls_1_0_0__logo">
+                            <img width="215" height="111" src="images/ft-logo.png" alt="">
+                        </div>
+                        <div class="footer_dls_1_0_0__social">
+                            <a href="#"><img width="32" height="32" src="images/icon-fb.svg" alt="fb"/></a>
+                            <a href="#"><img width="32" height="32" src="images/icon-ins.svg" alt="fb"/></a>
+                            <a href="#"><img width="32" height="32" src="images/icon-youtube.svg" alt="fb"/></a>
+                        </div>
                     </div>
-                    <div class="footer_sci_1_0_0__info">
-                        <div class="footer_sci_1_0_0__office">
-                            <p class="footer_sci_1_0_0__contact"><img width="12" height="18" src="images/ft-mail.svg"
-                                    alt=""> Head Office:</p>
-                            <a href="" class="footer_sci_1_0_0__address">212 Kim Mã, Phường Kim Mã, quận Ba Đình, Hà
-                                Nội</a>
+                    <div class="footer_dls_1_0_0__col">
+                        <div class="footer_dls_1_0_0__title">CONTACT US</div>
+                        <form class="footer_dls_1_0_0__wrapper" id="register-form">
+                            <div class="footer_dls_1_0_0__form">
+                                <input type="text" name="iemail" placeholder="Your Email">
+                                <textarea placeholder="Comments" name="inote" cols="30" rows="5"></textarea>
+                                <button type="submit">SEND INQUIRY</button>
+                            </div>
+                        </form>
+                        <style>
+                            .border{
+                                border:1px solid #c00 !important;
+                            }
+                        </style>
+                    </div>
+                    <div class="footer_dls_1_0_0__col">
+                        <div class="footer_dls_1_0_0__title">GET IN TOUCH</div>
+                        <div class="footer_dls_1_0_0__info">
+                            <p>A   75 Co Linh str., Thach Ban ward,
+                                Long Bien dist., Hanoi, Vietnam</p>
+                            <p>T   +84 24 3716 0666</p>
+                            <p>E   info@landastudio.vn</p>
+                            <p>W  www.landastudio.vn</p>
                         </div>
-                        <div class="footer_sci_1_0_0__office">
-                            <p class="footer_sci_1_0_0__contact"><img width="12" height="18" src="images/ft-call.svg"
-                                    alt=""> Số điện thoại:</p>
-                            <a href="" class="footer_sci_1_0_0__address">0247.302.9888</a>
-                        </div>
-                        <div class="footer_sci_1_0_0__office">
-                            <p class="footer_sci_1_0_0__contact"><img width="12" height="18" src="images/ft-mail.svg"
-                                    alt=""> Văn phòng miền Nam:
-                            </p>
-                            <a href="" class="footer_sci_1_0_0__address">666 Cách Mạng Tháng 8, phường 5, quận Tân Bình,
-                                Tp.HCM
-                            </a>
-                        </div>
-                        <div class="footer_sci_1_0_0__office">
-                            <p class="footer_sci_1_0_0__contact"><img width="12" height="18" src="images/ft-add.svg"
-                                    alt=""> E-mail:</p>
-                            <a href="" class="footer_sci_1_0_0__address">scigroup@gmail.com</a>
-                        </div>
+                        <p>Hotline +84 9 83771639</p>
                     </div>
                 </div>
-                <div class="footer_sci_1_0_0__bot">
-                    <div class="footer_sci_1_0_0__left">
-                        <ul class="footer_sci_1_0_0__list">
-                            <li>
-                                <a href="">Trang Chủ</a>
-                            </li>
-                            <li>
-                                <a href="">Về SCI</a>
-                            </li>
-                            <li>
-                                <a href="news.html">Tin Tức</a>
-                            </li>
-                            <li>
-                                <a href="">Tuyển Dụng</a>
-                            </li>
-                            <li>
-                                <a href="">Liên Hệ</a>
-                            </li>
-                        </ul>
-                        <p class="footer_sci_1_0_0__permit">Giấy phép G1 số 201/GP-BTTTT ngày 14/05/2018</p>
-                    </div>
+                <div class="footer_dls_1_0_0__bot">
+                    ©Copyright 2022. All Rights Reserved.
                 </div>
             </div>
         </div>
     </footer>
+    <script src="Footer/footer_dls_1_0_0/js/footer_dls_1_0_0.js"></script>
 </body>
 <script>
     imgTheme('Header/header_dls_1_0_0/', '.header_dls_1_0_0 img');
@@ -507,7 +548,7 @@
     imgTheme('Home/news_sci_1_0_0/', '.news_sci_1_0_0 img')
     imgTheme('Home/service_sci_1_0_0/', '.service_sci_1_0_0 img')
     imgTheme('Home/recruit_sci_1_0_0/', '.recruit_sci_1_0_0 img')
-    imgTheme('Footer/footer_sci_1_0_0/', '.footer_sci_1_0_0 img')
+    imgTheme('Footer/footer_dls_1_0_0/', '.footer_dls_1_0_0 img')
 </script>
 
 </html>
