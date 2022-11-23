@@ -175,15 +175,12 @@
                 cursor: pointer;
             }
         }
-        &__language {
-            padding: 10px;
-        }
         &__link {
             padding: 10px 0 10px 15px;
+            background:#222;
         }
         &__logo {
             img {
-                max-width: 90px;
                 margin: 0 auto;
             }
         }
@@ -191,7 +188,7 @@
             display: block;
             img {
                 width: 70%;
-                margin: 10px auto;
+                margin: 40px 17px 38px;
                 display: block;
                 height: auto;
             }
@@ -203,7 +200,7 @@
             top: 0;
             left: 0;
             bottom: 0;
-            background: #2386c7;
+            background: #151515;
             width: 250px;
             z-index: 20;
             transform: translateX(-100%);
@@ -215,26 +212,10 @@
 
         &__item {
             width: 100%;
-            padding: 8px 0;
+            padding: 1px 0;
         }
         &__btn {
             display: none;
-        }
-        &__link::after {
-            content: "ˇ";
-            position: absolute;
-            right: 10px;
-            font-size: 25px;
-        }
-
-        &__item:hover {
-            .header_dls_1_0_0__dropdown {
-                display: none;
-                flex-direction: column;
-            }
-            .header_dls_1_0_0__link {
-                background-color: unset;
-            }
         }
 
         &__item.open .header_dls_1_0_0__dropdown {
@@ -254,8 +235,7 @@
                 padding: 10px 0 10px 15px;
                 margin: 0;
                 ul {
-                    li {
-                        // border-bottom: 1px  #51abff;
+                    li {                        
                         &:hover {
                             a {
                                 color: black;
@@ -267,6 +247,15 @@
                     }
                 }
             }
+        }
+    }
+    @media (max-width:1180px){
+        .header_dls_1_0_0__logo{
+            width:100%;
+        }
+        .header_dls_1_0_0__language{
+            top:10px;
+            font-size:15px;
         }
     }
     @media (max-width: 767px) {
