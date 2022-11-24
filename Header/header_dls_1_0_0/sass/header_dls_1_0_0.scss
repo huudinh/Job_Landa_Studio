@@ -107,14 +107,24 @@
         border:none;
         color:#fff;
         border-radius: none;
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+        outline: none;
+        overflow: unset!important;
+        padding-left:22px;
         option{ 
             color:#fff;
-            background:#212529;
-
+            border-radius: 4px;
+            padding:2px 5px;
+            box-shadow: 0 0 10px 100px #111 inset;
+            &:hover{
+                box-shadow: 0 0 10px 100px #333 inset;
+            }
         }
         &.en{
             background: url(../images/en.png) 0 5px no-repeat;
-            padding-left:22px;
+        }
+        &.vi{
+            background: url(../images/vi.png) 0 5px no-repeat;
         }
     }
     &__nav {
@@ -147,6 +157,7 @@
         }
         &__nav {
             display: block;
+            position: fixed;
             img {
                 display: block;
             }
@@ -250,21 +261,32 @@
         }
     }
     @media (max-width:1180px){
-        .header_dls_1_0_0__logo{
+        &__logo{
             width:100%;
         }
-        .header_dls_1_0_0__language{
+        &__language{
             top:10px;
             font-size:15px;
         }
     }
-    @media (max-width: 767px) {
+    @media (max-width: 820px) {
+        &__language.en{
+            background: none;
+            padding-left:0;
+        }
+        &__language{
+            font-size:12px;
+            top:14px;
+        }
         .container {
             padding-right: 15px;
             padding-left: 15px;
         }
-        &__link {
-            padding: 0 15px;
+    }
+    @media (max-width:600px){
+        .header_dls_1_0_0__language.vi,
+        .header_dls_1_0_0__language.en{
+            background: none;
         }
     }
 

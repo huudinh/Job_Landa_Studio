@@ -8,7 +8,6 @@ document.getElementById("headerBg").addEventListener("click", () => {
 });
 
 const menuItem = document.querySelectorAll(".header_sci_1_0_0__item");
-// console.log(menuItem);
 menuItem.forEach((item) => {
   item.addEventListener("click", () => {
     item.classList.toggle("open");
@@ -30,3 +29,15 @@ const scrollFunction = () => {
       .classList.remove("header_sci_1_0_0--active");
   }
 };
+function urlHandler(value) {                               
+  window.location.assign(`${value}`);
+  let x = document.querySelector('.header_dls_1_0_0__language');
+  
+  if(x.classList[1] == 'en'){
+      x.classList.remove('en');
+      x.classList.add('vi');
+  } else {
+      x.classList.remove('vi');
+      x.classList.add('en');
+  }
+}

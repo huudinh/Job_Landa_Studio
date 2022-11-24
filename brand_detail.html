@@ -47,16 +47,12 @@
                         <a class="header_dls_1_0_0__link">360 SHOWROOM</a>
                     </li>                    
                 </ul>
-                <select class="header_dls_1_0_0__language en">
-                    <option>English</option>
-                    <option>Tiếng việt</option>
+                <select class="header_dls_1_0_0__language en" onfocus='this.size=2;' onblur='this.size=0;' 
+                onchange='this.size=1; this.blur(); urlHandler(this.value);'>
+                    <option value="#en">English</option>
+                    <option value="#vi">Tiếng Việt</option>
                 </select>
                 <div class="header_dls_1_0_0__bg" id="headerBg"></div>
-                <!-- <div class="header_dls_1_0_0__btnGroup">
-                    <a href="tel:1900633988">
-                        <img width="20" height="20" src="images/header-call-m.svg" alt="">
-                    </a>
-                </div> -->
             </div>
         </div>
     </header>
