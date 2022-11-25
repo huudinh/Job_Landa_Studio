@@ -144,50 +144,39 @@
             }
             cateFilter = removeDuplicates(cateArr);
             
-            cateList = [
-                {
-                    name: 'All',
-                    link: 'images/icon-1.svg'
-                },
-            ]
-            
+            const cateList = [{
+                name: 'All',
+                link: 'images/icon-1.svg'
+            }];
 
-            for(let i = 0; i < cateFilter.length; i++){
-                if(cateFilter[i] == 'Kitchen'){
-                    cateList[i + 1] = {
-                        name: cateFilter[i],
-                        link: 'images/icon-2.svg',
-                    }
-                }
-                if(cateFilter[i] == 'Living Room'){
-                    cateList[i + 1] = {
-                        name: cateFilter[i],
-                        link: 'images/icon-3.svg',
-                    }
-                }
-                if(cateFilter[i] == 'Bathroom'){
-                    cateList[i + 1] = {
-                        name: cateFilter[i],
-                        link: 'images/icon-4.svg',
-                    }
-                }
-                if(cateFilter[i] == 'Bedroom'){
-                    cateList[i + 1] = {
-                        name: cateFilter[i],
-                        link: 'images/icon-5.svg',
-                    }
-                }
-                if(cateFilter[i] == 'Ceramic / Porcelain tiling'){
-                    cateList[i + 1] = {
-                        name: cateFilter[i],
-                        link: 'images/icon-5.svg',
-                    }
+            const addCateList = (name, link, index) => {
+                cateList[index] = {
+                    name: name,
+                    link: link
                 }
             }
 
-            console.log(cateList);
+            for(let i = 0; i < cateFilter.length; i++){
+                let item = i + 1;
+                switch (cateFilter[i]){
+                    case 'Kitchen': 
+                        addCateList(cateFilter[i], 'images/icon-2.svg', item);
+                        break;
+                    case 'Living Room':
+                        addCateList(cateFilter[i], 'images/icon-3.svg', item);
+                        break;
+                    case 'Bathroom':
+                        addCateList(cateFilter[i], 'images/icon-4.svg', item);
+                        break;
+                    case 'Bedroom':
+                        addCateList(cateFilter[i], 'images/icon-5.svg', item);
+                        break;
+                    case 'Ceramic / Porcelain tiling':
+                        addCateList(cateFilter[i], 'images/icon-6.svg', item);
+                        break;
+                }
+            }
         </script>
-
         <script src="js/brandcate_dls_1_0_0.js"></script>
     </div>
 </body>

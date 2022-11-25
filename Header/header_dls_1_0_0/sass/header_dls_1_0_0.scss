@@ -7,6 +7,7 @@
     font-family: var(--primary-font);
     background: rgba(0, 0, 0, 0.8);
     border-bottom: 1px solid #fff;
+    height:88px;
     .container{
         position: relative;
     }
@@ -100,7 +101,7 @@
     }
     &__language {
         position: absolute;
-        z-index: 21;
+        z-index: 9;
         top:30px;
         right:0;
         background:#212529;
@@ -261,6 +262,9 @@
         }
     }
     @media (max-width:1180px){
+        height:68px;
+        display: flex;
+        align-items: center;
         &__logo{
             width:100%;
         }
@@ -284,16 +288,28 @@
         }
     }
     @media (max-width:600px){
-        .header_dls_1_0_0__language.vi,
-        .header_dls_1_0_0__language.en{
+        &__language.vi,
+        &__language.en{
             background: none;
+        }
+        &__logo img{
+            max-width: 170px;
         }
     }
 
     @media (max-width: 280px) {
+        &__logo img{
+            max-width: 122px;
+        }
         .container {
             padding-right: 10px;
             padding-left: 10px;
+        }
+        &__list {
+            width:230px
+        }
+        &__language{
+            top:5px;
         }
     }
 }
