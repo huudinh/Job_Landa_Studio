@@ -272,6 +272,9 @@
             top:10px;
             font-size:15px;
         }
+        &__logoMb img {
+            margin: 30px 17px;
+        }
     }
     @media (max-width: 820px) {
         &__language.en{

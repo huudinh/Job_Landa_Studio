@@ -1,9 +1,10 @@
 .brand_dls_1_0_0 {
     padding: 40px 0 20px 0;
     font-family: var(--primary-font);
-    max-width: 85%;
-    margin:0 auto;
     text-align: center;
+    .container{
+        max-width: 85%;
+    }
     img{
         display: block;
         max-width: 100%;
@@ -23,11 +24,45 @@
         }
         &.prev{
             background-image: url(../images/icon-left.png);
-            left:-11%;
+            left:-75px;
         }
         &.next{
             background-image: url(../images/icon-right.png);
-            right:-11%;
+            right:-75px;
         }
+    }
+}
+@media (max-width:1440px){
+    .brand_dls_1_0_0 .controls li.next {
+        right: -61px;
+    }
+    .brand_dls_1_0_0 .controls li.prev {
+        left: -61px;
+    }
+    .brand_dls_1_0_0 .controls li{
+        width:40px;
+        height:40px;
+    }
+}
+@media (max-width:1366px){
+    .brand_dls_1_0_0 .controls li.next {
+        right: -76px;
+    }
+    .brand_dls_1_0_0 .controls li.prev {
+        left: -76px;
+    }
+}
+@media (max-width:600px){
+    .brand_dls_1_0_0{
+        padding:0;
+    }
+    .brand_dls_1_0_0 .controls li.next {
+        right: -20px;
+    }
+    .brand_dls_1_0_0 .controls li.prev {
+        left: -20px;
+    }
+    .brand_dls_1_0_0 .controls li{
+        top:24%
     }
 }

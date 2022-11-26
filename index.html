@@ -111,9 +111,9 @@
         <link rel="stylesheet" href="Home/brand_dls_1_0_0/sass/brand_dls_1_0_0.min.css">
         <section class="brand_dls_1_0_0">
             <div class="container">
-                <div class="main_dls_1_0_0__title slide">Brands</div>
-                <div class="main_dls_1_0_0__line slide"></div>
-                <div class="brand_dls_1_0_0__content slide" style="position: relative;">
+                <div class="main_dls_1_0_0__title fadeInUp load">Brands</div>
+                <div class="main_dls_1_0_0__line fadeInUp load"></div>
+                <div class="brand_dls_1_0_0__content fadeInUp load" style="position: relative;">
                     <div class="slide_step" id="slide_step">
                         <div>
                             <p><img src="images/pic-1.jpg" alt=""></p>
@@ -153,7 +153,21 @@
                 autoplayTimeout: 1000,
                 autoplayButton: '#customize-toggle',
                 gutter: 10,
-                nav:false
+                nav:false,
+                responsive: {
+                0: {
+                    items: 1,
+                },
+                768: {
+                    items: 2,
+                },
+                820: {
+                    items: 2,
+                },
+                1024: {
+                    items: 3,
+                }
+            },
             });
         </script>
 
@@ -161,10 +175,10 @@
         <link rel="stylesheet" href="Home/project_dls_1_0_0/sass/project_dls_1_0_0.min.css">
         <section class="project_dls_1_0_0 ">
             <div class="container">
-                <div class="main_dls_1_0_0__title slide">Signature Projects</div>
-                <div class="main_dls_1_0_0__line slide"></div>
-                <div id="project_dls_1_0_0__content" class="project_dls_1_0_0__content slide"></div>
-                <div class="project_dls_1_0_0__more slide">MORE PROJECTS</div>
+                <div class="main_dls_1_0_0__title fadeInUp load">Signature Projects</div>
+                <div class="main_dls_1_0_0__line fadeInUp load"></div>
+                <div id="project_dls_1_0_0__content" class="project_dls_1_0_0__content fadeInUp load"></div>
+                <div class="project_dls_1_0_0__more fadeInUp load">MORE PROJECTS</div>
             </div>
         </section>
         <script>
