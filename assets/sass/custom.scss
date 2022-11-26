@@ -66,6 +66,17 @@ body{
     .main_dls_1_0_0__item--post {
         left: 312px;
     }
+    .main_dls_1_0_0__item--row{
+        top:436px;
+    }
+}
+@media (max-width:1368px){
+    .main_dls_1_0_0__item--left {
+        left: 90px;
+    }
+    .main_dls_1_0_0__item--right {
+        right: 90px;
+    }
 }
 @media (max-width:1366px){
     .main_dls_1_0_0__item--left {
