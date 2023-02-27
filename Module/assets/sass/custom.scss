@@ -12,13 +12,16 @@ body{
 }
 .main_dls_1_0_0{
     position: relative;
+    z-index: 100;
+    background:#000;
+    overflow: hidden;
     &--page{
         padding-top:100px;
     }
     &__item{
         position: absolute;
         background-color:#ffffff;
-        z-index: 9;
+        z-index: 102;
         &--row{
             height:1px;
             top:720px;
@@ -26,7 +29,7 @@ body{
         }
         &--col{
             width:1px;
-            height:100%;
+            height:98.1%;
             top:85px;
         }
         &--left{

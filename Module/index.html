@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://huudinh.github.io/assets/sass/lib.min.css" />
     <link rel="stylesheet" href="./assets/sass/custom.min.css" />
     
+    <script src="./assets/js/custom.js"></script>
     <script src="https://huudinh.github.io/assets/js/module.min.js"></script>
     <script src="https://huudinh.github.io/assets/js/tiny-slider.min.js"></script>
 </head>
@@ -49,6 +50,8 @@
         setVisible('.page', true);
         setVisible('#loading', false);
     });
+
+
 </script>
 <body>
     <div class="page">
@@ -62,8 +65,8 @@
             <div id="about_dls_1_0_0"></div>
             <div id="brand_dls_1_0_0"></div>
             <div id="project_dls_1_0_0"></div>
-            <div id="footer_dls_1_0_0"></div>
         </main>
+        <div id="footer_dls_1_0_0"></div>
     </div>
     <div id="loading"></div>
 </body>
@@ -77,5 +80,4 @@
     renderModule ('Home', 'project_dls_1_0_0', 'data', 'logic');
     renderModule ('Footer', 'footer_dls_1_0_0', '', 'logic');
 </script>
-
 </html>

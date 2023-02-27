@@ -1,19 +1,10 @@
-function imgTheme(path, tag) {
-    let x = document.querySelectorAll(tag);
-    for (let item of x) {
-        let src = item.getAttribute('src');
-        src = path + src;
-        item.setAttribute('src', src);
-    }
-}
-function sourceTheme(path, tag) {
-    let x = document.querySelectorAll(tag);
-    for (let item of x) {
-        let srcset = item.getAttribute('srcset');
-        srcset = path + srcset;
-        item.setAttribute('srcset', srcset);
-    }
-}
+// Footer hide
+setTimeout(()=>{
+    let x = document.getElementsByTagName('footer')[0];
+    let y = document.getElementsByClassName('main_dls_1_0_0 ')[0];
+    y.setAttribute("style", `margin-bottom: ${x.clientHeight}px !important;`);  
+}, 3000);
+
 document.addEventListener("scroll", function () {
     myLazy('img.lazy', 'src');
     myLazy('source.lazy', 'srcset');
@@ -96,47 +87,4 @@ function LazyShowScreen(sec, attr) {
             }
         }
     }
-}
-// Ajaxload
-function loadDoc(url, cFunction) {
-    const xhttp = new XMLHttpRequest();
-    xhttp.onload = function() {cFunction(this);}
-    xhttp.open("GET", url);
-    xhttp.send();
-}
-
-// Render Module
-function renderModule (type, module, data, logic){
-
-    // Khai baos Module
-    let url = `${type}/${module}/`;
-    loadDoc(`${url}code.html`, insertLayout);
-    
-    // Function xu ly
-    function insertLayout(xhttp) {
-        document.getElementById(`${module}`).innerHTML = xhttp.responseText;
-        imgTheme(`${url}`, `.${module} img`);
-    }
-
-    // Khai bao api
-    if (data == 'data'){
-        var script = document.createElement('script');
-        script.type = "text/javascript";
-        script.src = `${url}js/${module}_dataHome.js`;
-        var t=document.getElementsByTagName('script')[0];t.parentNode.insertBefore(script,t);   
-    }
-
-    // Khai bao js
-    if (logic == 'logic'){
-        var script = document.createElement('script');
-        script.type = "text/javascript";
-        script.src = `${url}js/${module}.js`;
-        var t=document.getElementsByTagName('script')[0];t.parentNode.insertBefore(script,t);   
-    }
-
-    // Khai bao css
-    var link = document.createElement('link');
-    link.rel = "stylesheet";
-    link.href = `${url}/sass/${module}.min.css`;
-    var t=document.getElementsByTagName('link')[0];t.parentNode.insertBefore(link,t);   
 }
