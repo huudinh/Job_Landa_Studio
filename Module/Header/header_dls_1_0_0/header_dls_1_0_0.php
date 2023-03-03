@@ -1,6 +1,6 @@
 <?php 
     if($check == 0){
-      include(locate_template("Module/Header/header_dls_1_0_0/sass/header_dls_1_0_0_css.php"));          
+      include(locate_template("Module/Header/header_dls_1_0_0/header_dls_1_0_0_css.php"));          
     }
 ?>
 <header class="header_dls_1_0_0">
@@ -44,11 +44,9 @@
                                 $main_tt = explode(" | ",  $list["title"]);
                                 echo '
                                     <li class="header_dls_1_0_0__item">
-                                        <a class="header_dls_1_0_0__link" href="'.$main_tt[1].'">'.$main_tt[0].'</a>
+                                        <a class="header_dls_1_0_0__link" href="'.$main_tt[1].'">'.$main_tt[0].' <img src="'.$path.'images/icon.svg" alt="icon"></a> 
                                         <div class="header_dls_1_0_0__dropdown">
-                                            <div class="header_dls_1_0_0__dropdownCate">
-                                                '.$list["col1"].'
-                                            </div>
+                                            '.$list["col1"].'
                                         </div>
                                     </li>
                                 ';

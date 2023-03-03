@@ -45,16 +45,16 @@ header("Cache-Control: max-age=31557600"); //30days (60sec  60min  24hours * 30d
 </head>
 
 <body>
+    <?php get_template_part('Module/module_header'); ?>
     <main class="main_dls_1_0_0 main_dls_1_0_0--page">
         <div class="main_dls_1_0_0__item main_dls_1_0_0__item--col main_dls_1_0_0__item--left"></div>
         <div class="main_dls_1_0_0__item main_dls_1_0_0__item--col main_dls_1_0_0__item--right"></div>    
-
-        <?php get_template_part('Module/module_header'); ?>
-        
         <?php 
             get_template_part('Module/Category/breadcrumb_dls_1_0_0/breadcrumb_dls_1_0_0');	
             get_template_part('Module/module');	
-            get_template_part('Module/module_footer');
-        ?>
+            ?>
     </main>
+    <?php 
+        get_template_part('Module/module_footer');
+    ?>
 </body>

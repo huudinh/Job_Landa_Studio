@@ -42,17 +42,60 @@ header("Cache-Control: max-age=31557600"); //30days (60sec  60min  24hours * 30d
         include(locate_template('Module/assets/sass/lib_css.php')); 
         include(locate_template('Module/assets/sass/custom_css.php')); 
     ?>
+    <style>
+        .page {
+            display: none;
+            padding: 0 0.5em;
+        }
+        #loading {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(192, 192, 192, 1);
+            background-image: url("/wp-content/themes/SCI_Theme/Module/Header/header_dls_1_0_0/images/logo.png");
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+    <script>
+        function onReady(callback) {
+            var intervalId = window.setInterval(function () {
+                if (document.getElementsByTagName('body')[0] !== undefined) {
+                    window.clearInterval(intervalId);
+                    callback.call(this);
+                }
+            }, 2000);
+        }
+
+        function setVisible(selector, visible) {
+            document.querySelector(selector).style.display = visible ? 'block' : 'none';
+        }
+
+        onReady(function () {
+            setVisible('.page', true);
+            setVisible('#loading', false);
+        });
+    </script>
 </head>
 
 <body>
-    <main class="main_dls_1_0_0">
-        <div class="main_dls_1_0_0__item main_dls_1_0_0__item--row"></div>
-        <div class="main_dls_1_0_0__item main_dls_1_0_0__item--col main_dls_1_0_0__item--left"></div>
-        <div class="main_dls_1_0_0__item main_dls_1_0_0__item--col main_dls_1_0_0__item--right"></div>
+    <div class="page">
         <?php get_template_part('Module/module_header'); ?>
+        <main class="main_dls_1_0_0">
+            <div class="main_dls_1_0_0__item main_dls_1_0_0__item--row"></div>
+            <div class="main_dls_1_0_0__item main_dls_1_0_0__item--col main_dls_1_0_0__item--left"></div>
+            <div class="main_dls_1_0_0__item main_dls_1_0_0__item--col main_dls_1_0_0__item--right"></div>
+            <?php 
+                get_template_part('Module/module');	
+            ?>
+        </main>
         <?php 
-            get_template_part('Module/module');	
-            get_template_part('Module/module_footer');
+            get_template_part('Module/module_footer');    
         ?>
-    </main>
+    </div>
+    <div id="loading"></div>
 </body>

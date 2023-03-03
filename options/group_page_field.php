@@ -388,6 +388,20 @@ if( function_exists('acf_add_local_field_group') ):
                                     ),
                                 ),
                             ),
+                            'id_service_dls_1_1_0' => array(
+                                'key' => 'id_service_dls_1_1_0',
+                                'name' => 'service_dls_1_1_0',
+                                'label' => 'Service 1.1.0',
+                                'display' => 'block',
+                                'sub_fields' => array(
+                                    array(
+                                        'key' => 'id_service_dls_1_1_0_sub1',
+                                        'label' => 'Photo',
+                                        'name' => 'data',
+                                        'type' => 'gallery',
+                                    ),
+                                ),
+                            ),
                             'id_project_dls_1_1_0' => array(
                                 'key' => 'id_project_dls_1_1_0',
                                 'name' => 'project_dls_1_1_0',
@@ -421,6 +435,20 @@ if( function_exists('acf_add_local_field_group') ):
                                                 'type' => 'gallery',
                                             ),
                                         ),
+                                    ),
+                                ),
+                            ),
+                            'id_contact_dls_1_0_0' => array(
+                                'key' => 'id_contact_dls_1_0_0',
+                                'name' => 'contact_dls_1_0_0',
+                                'label' => 'contact 1.0.0',
+                                'display' => 'block',
+                                'sub_fields' => array(
+                                    array(
+                                        'key' => 'id_contact_dls_1_0_0_sub2',
+                                        'label' => 'Nội dung',
+                                        'name' => 'contact_content',
+                                        'type' => 'wysiwyg',
                                     ),
                                 ),
                             ),

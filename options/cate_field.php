@@ -18,8 +18,10 @@ if( function_exists('acf_add_local_field_group') ):
                     'id' => '',
                 ),
                 'choices' => array(
-                    'default' => 'Mặc định',
-                    'brand' => 'Thương hiệu',                    
+                    'default' => 'Sản Phẩm',
+                    'brand' => 'Group Sản Phẩm',                    
+                    'news' => 'Tin Tức',                    
+                    'project' => 'Dự Án',                    
                 ),
                 'default_value' => false,
                 'allow_null' => 0,
