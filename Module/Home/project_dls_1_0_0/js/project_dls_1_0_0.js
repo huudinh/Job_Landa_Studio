@@ -13,16 +13,16 @@ const recruitCard = (data, index) => {
 
   return `
     <div class="project_dls_1_0_0__item ${itemStyle}">
-        <div class="project_dls_1_0_0__pic">
+        <a class="project_dls_1_0_0__pic" href="${data.link}">
             <img width="720" height="480" src="${data.photo}" alt="photo" />
-        </div>
+        </a>
         <div class="project_dls_1_0_0__text ${textStyle}">
             <div class="project_dls_1_0_0__num">
                 0${index}.
             </div>
-            <div class="project_dls_1_0_0__name">
+            <a class="project_dls_1_0_0__name" href="${data.link}">
               ${data.name}
-            </div>
+            </a>
             <div class="project_dls_1_0_0__place">
               ${data.place}
             </div>
@@ -52,24 +52,25 @@ const render = (data) => {
             "project_dls_1_0_0__more"
           )[0].style.display = "table";
         }
-        if (key + 2 > data.length) {
-          document.getElementsByClassName(
-            "project_dls_1_0_0__more"
-          )[0].style.display = "none";
-        }
+        // if (key + 2 > data.length) {
+        //   document.getElementsByClassName(
+        //     "project_dls_1_0_0__more"
+        //   )[0].style.display = "none";
+        // }
       }
     }
-    // chay lan dau
-    loop(2);
+    // chay lan dau full
+    // loop(2);
+    loop(data.length);
     let count = 2;
     const counter = () => loop((count += 2));
     // xử ly click more
-    document
-      .getElementsByClassName("project_dls_1_0_0__more")[0]
-      .addEventListener("click", () => {
-        counter();
+    // document
+    //   .getElementsByClassName("project_dls_1_0_0__more")[0]
+    //   .addEventListener("click", () => {
+    //     counter();
         
-      });
+    //   });
   }
 };
 

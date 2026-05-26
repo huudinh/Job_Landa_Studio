@@ -11,20 +11,20 @@
             <div class="contact_dls_1_0_0__form">
                 <div class="contact_dls_1_0_0__formTitle">
                     <img src="<?php echo $path ?>images/mail.png" />
-                    <p>Send us an email</p>
+                    <p>Liên lạc với chúng tôi</p>
                 </div>
                 <form id="register-form2">
                     <div class="contact_dls_1_0_0__formContent">
-                        <input type="text" name="iemail" placeholder="YOUR EMAIL">
-                        <textarea name="inote" cols="30" rows="5" placeholder="Comments"></textarea>
-                        <button type="submit">SEND</button>
+                        <input type="text" name="iemail" placeholder="Nhận Email của bạn">
+                        <textarea name="inote" cols="30" rows="5" placeholder="Nội dung"></textarea>
+                        <button type="submit">Gửi</button>
                     </div>
                 </form>
             </div>
             <div class="contact_dls_1_0_0__call">
                 <div class="contact_dls_1_0_0__formTitle">
                     <img src="<?php echo $path ?>images/call.png" alt="">
-                    <p>Talk to us</p>
+                    <p>Gọi cho chúng tôi</p>
                 </div>
                 <?php 
                     while ( have_posts() ) : 

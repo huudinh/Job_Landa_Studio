@@ -1,8 +1,14 @@
+<style>
 <?php
-	include(locate_template("Module/Category/projectList_dls_1_0_0/projectList_dls_1_0_0_css.php"));
+	include(locate_template("Module/Category/projectList_dls_1_0_0/sass/projectList_dls_1_0_0.min.css"));
 ?>
+</style>
 <div class="projectList_dls_1_0_0">
-    <div class="projectList_dls_1_0_0__title">PROJECTS</div>
+    <div class="projectList_dls_1_0_0__title">
+		<?php
+			echo single_cat_title();
+		?>
+	</div>
     <div class="projectList_dls_1_0_0__line"></div>
     <ul>
 		<?php 
@@ -17,7 +23,7 @@
 					echo '
 						<li>
 							<div class="projectList_dls_1_0_0__pic">
-								<a href="'.get_permalink($post->ID).'"><img width="360" height="225" src="'.$img.'" alt="'.get_the_title($post->ID).'"></a>
+								<a href="'.get_permalink($post->ID).'"><img width="360" height="225" src="/rs?w=360&h=225&src='.$img.'" alt="'.get_the_title($post->ID).'"></a>
 							</div>
 							<h3 class="projectList_dls_1_0_0__tt">
 								<a href="'.get_permalink($post->ID).'">'.get_the_title($post->ID).'</a>

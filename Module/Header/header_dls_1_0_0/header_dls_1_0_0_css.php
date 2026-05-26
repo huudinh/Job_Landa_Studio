@@ -6,7 +6,7 @@
 .header_dls_1_0_0__logo img{display:block;width:100%;max-width:200px;height:auto}
 .header_dls_1_0_0__list{flex:1;display:flex;list-style:none;margin:0;padding:0;align-items:center}
 .header_dls_1_0_0__item{padding:0 2.2vw;position:relative}
-.header_dls_1_0_0__link{font-size:16px;padding:30px 0;display:block;font-weight:600;cursor:pointer;color:#fff}
+.header_dls_1_0_0__link{font-size:16px;padding:30px 0;display:block;cursor:pointer;color:#fff}
 .header_dls_1_0_0__btn{padding:0;margin:0 0 0 10px;border:none;background:none;display:block;cursor:pointer;line-height:0}
 .header_dls_1_0_0__dropdown{transition:all .2s linear;display:none;position:absolute;top:56px;left:0;width:100%;background:#111;box-shadow:0 0 2px rgba(0,0,0,.2);padding:20px;text-align:center}
 .header_dls_1_0_0__dropdown ul{list-style:none;padding:0;margin:0;font-size:12px}

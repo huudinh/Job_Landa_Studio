@@ -12,10 +12,11 @@
             <?php 
                 $content = $field['data'];
                 foreach( $content as $key => $image ):
+                    // <a class="service_dls_1_0_0__item" href="'.$image['url'].'">
                     echo '
-                        <div class="service_dls_1_0_0__item">
+                        <a class="service_dls_1_0_0__item" href="/vi/dich-vu/">
                             <img src="'.$image['url'].'" alt="'.$image['title'].'" />
-                        </div>
+                        </a>
                     ';
                 endforeach;
             ?>

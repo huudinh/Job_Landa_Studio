@@ -247,31 +247,31 @@ function exc($param) {
 }
 
 // chi cho phep tai len các file gif png jpg
-add_filter('wp_handle_upload_prefilter', 'yoursite_wp_handle_upload_prefilter');
-function yoursite_wp_handle_upload_prefilter($file) {
-    if ($file['type']=='application/octet-stream' && isset($file['tmp_name'])) {
-        $file_size = getimagesize($file['tmp_name']);
-        if (isset($file_size['error']) && $file_size['error']!=0) {
-            $file['error'] = "Unexpected Error: {$file_size['error']}";
-            return $file;
-        } else {
-            $file['type'] = $file_size['mime'];
-        }
-    }
-    list($category,$type) = explode('/',$file['type']);
-    if ('image'!=$category || !in_array($type,array('jpg','jpeg','gif','png'))) {
-        $file['error'] = "Xin lỗi bạn chỉ có thể tải lên file ảnh định dạng .GIF, .JPG, hay .PNG";
-    } else if ($post_id = (isset($_REQUEST['post_id']) ? $_REQUEST['post_id'] : false)) {
-        if (count(get_posts("post_type=attachment&post_parent={$post_id}"))>20) // so hinh anh duoc phép tai len
-        $file['error'] = "Xin lỗi, bạn không thể tải lên nhiều hơn 20 hình ảnh.";
-    }
-    return $file;
-}
+// add_filter('wp_handle_upload_prefilter', 'yoursite_wp_handle_upload_prefilter');
+// function yoursite_wp_handle_upload_prefilter($file) {
+//     if ($file['type']=='application/octet-stream' && isset($file['tmp_name'])) {
+//         $file_size = getimagesize($file['tmp_name']);
+//         if (isset($file_size['error']) && $file_size['error']!=0) {
+//             $file['error'] = "Unexpected Error: {$file_size['error']}";
+//             return $file;
+//         } else {
+//             $file['type'] = $file_size['mime'];
+//         }
+//     }
+//     list($category,$type) = explode('/',$file['type']);
+//     if ('image'!=$category || !in_array($type,array('jpg','jpeg','gif','png'))) {
+//         $file['error'] = "Xin lỗi bạn chỉ có thể tải lên file ảnh định dạng .GIF, .JPG, hay .PNG";
+//     } else if ($post_id = (isset($_REQUEST['post_id']) ? $_REQUEST['post_id'] : false)) {
+//         if (count(get_posts("post_type=attachment&post_parent={$post_id}"))>20) // so hinh anh duoc phép tai len
+//         $file['error'] = "Xin lỗi, bạn không thể tải lên nhiều hơn 20 hình ảnh.";
+//     }
+//     return $file;
+// }
 
 // Fix upload max
-function filter_site_upload_size_limit( $size ) { 
-    return 1024 * 1024 * 0.25; 
-} 
-add_filter( 'upload_size_limit', 'filter_site_upload_size_limit', 120 );
+// function filter_site_upload_size_limit( $size ) { 
+//     return 1024 * 1024 * 0.25; 
+// } 
+// add_filter( 'upload_size_limit', 'filter_site_upload_size_limit', 120 );
 
 ?>

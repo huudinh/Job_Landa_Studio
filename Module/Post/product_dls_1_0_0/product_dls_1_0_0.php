@@ -5,16 +5,18 @@
 	include(locate_template("Module/Post/product_dls_1_0_0/sass/product_dls_1_0_0_css.php"));
     $categories = get_the_category();
 
-    $content = get_field( 'single_photo' );    
+    $content = get_field( 'single_photo' );   
+    $description = get_field('description'); 
 ?>
 <script src="<?php echo get_template_directory_uri() ?>/Module/assets/js/tiny-slider.min.js"></script>
 
 <div class="product_dls_1_0_0">
     <h1 class="product_dls_1_0_0__title">
         <?php 
-            if ( ! empty( $categories ) ) {
-                echo esc_html( $categories[0]->name );	
-            }
+            // if ( ! empty( $categories ) ) {
+            //     echo esc_html( $categories[0]->name );	
+            // }
+            the_title();
         ?>
     </h1>
     <div class="product_dls_1_0_0__photo" style="position: relative;">
@@ -23,7 +25,7 @@
                 foreach( $content as $image ):
                     echo "
                         <div>
-                            <img src='".$image['url']."' alt='".$image['title']."'>
+                            <img src='/rs?w=600&h=375&src=".$image['url']."' alt='".$image['title']."'>
                         </div>
                     ";
                 endforeach;
@@ -44,7 +46,7 @@
                 foreach( $content as $image ):
                     echo "
                         <li>
-                            <img src='".$image['url']."' alt='".$image['title']."'>
+                            <img src='/rs?w=293&h=183&src=".$image['url']."' alt='".$image['title']."'>
                         </li>
                     ";
                 endforeach;
@@ -60,7 +62,7 @@
         </ul>
 
     </div>
-    <h2 class="product_dls_1_0_0__titleSub"><?php the_title(); ?></h2>
+    <h2 class="product_dls_1_0_0__titleSub"><?php echo $description; ?></h2>
     <div class="product_dls_1_0_0__detail">
         <?php 
             while ( have_posts() ) : 

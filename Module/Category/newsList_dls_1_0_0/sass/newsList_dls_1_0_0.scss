@@ -35,7 +35,7 @@
         list-style: none;
         display: flex;
         flex-wrap: wrap;
-        gap:0 35px;
+        gap:0 3.3%;
     }
     &__item{
         padding: 0;
@@ -70,19 +70,24 @@
     .newsList_dls_1_0_0{
         max-width: 88%;
     }
-    .newsList_dls_1_0_0 li{
-        width:48%;
-    }
-}
-@media (max-width:600px){
+   
     .newsList_dls_1_0_0__hot{
         grid-template-columns: auto;
+        width:100%;
+    }
+    .newsList_dls_1_0_0__item{
+        width:48%;
     }
     .newsList_dls_1_0_0__hotContent {
         padding: 0 20px;
     }
+}
+@media (max-width:600px){
     .newsList_dls_1_0_0 ul{
         flex-direction: column;
+    }
+    .newsList_dls_1_0_0 li{
+        width:100%
     }
 }
 @media (max-width:414px){

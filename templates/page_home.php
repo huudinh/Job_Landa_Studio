@@ -45,7 +45,6 @@ header("Cache-Control: max-age=31557600"); //30days (60sec  60min  24hours * 30d
     <style>
         .page {
             display: none;
-            padding: 0 0.5em;
         }
         #loading {
             display: block;

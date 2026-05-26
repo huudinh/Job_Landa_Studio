@@ -6,11 +6,11 @@
     $typecate = get_field('cate_type', 'category_'.$category_id);
 ?>
 
-<?php if ($typecate == 'default'): ?>
+<?php if (($typecate == 'default') || ($typecate == 'brand')): ?>
 	<div class="main_dls_1_0_0__item main_dls_1_0_0__item--col main_dls_1_0_0__item--post"></div>
 <?php endif; ?>
 
-<?php if ($typecate == 'default'): ?>
+<?php if (($typecate == 'default') || ($typecate == 'brand')): ?>
     <div class="container">
         <div class="main_dls_1_0_0__post row">
             <div class="col-xl-2">
@@ -27,6 +27,15 @@
 <?php if ($typecate == 'news'): ?>
     <?php get_template_part('Module/Post/newsDetail_dls_1_0_0/newsDetail_dls_1_0_0'); ?>
     <?php get_template_part('Module/Post/newsOther_dls_1_1_0/newsOther_dls_1_1_0'); ?>
+<?php endif; ?>
+
+<?php if ($typecate == 'price'): ?>
+    <style>
+        .newsDetail_dls_1_0_0__tool, .newsDetail_dls_1_0_0__thumb{
+            display: none!important;
+        }
+    </style>
+    <?php get_template_part('Module/Post/newsDetail_dls_1_0_0/newsDetail_dls_1_0_0'); ?>
 <?php endif; ?>
     
 <?php if ($typecate == 'project'): ?>

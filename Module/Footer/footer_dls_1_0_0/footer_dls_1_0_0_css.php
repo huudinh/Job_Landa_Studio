@@ -6,10 +6,10 @@
 .footer_dls_1_0_0__social img:hover{opacity:.6}
 .footer_dls_1_0_0__info{margin-bottom:20px}
 .footer_dls_1_0_0__info p:first-letter{text-transform:uppercase;padding-right:10px}
-.footer_dls_1_0_0__title{margin:40px 0;text-transform:uppercase;font-size:24px}
+.footer_dls_1_0_0__title{margin:40px 0;text-transform:uppercase;font-size:24px;font-weight:bold}
 .footer_dls_1_0_0__bot{margin-top:15px}
 .footer_dls_1_0_0__form{max-width:600px;margin:0 auto 40px}
-.footer_dls_1_0_0__form label{color:#858585;font-weight:600;text-transform:uppercase;margin-top:20px;display:block;text-align:left}
+.footer_dls_1_0_0__form label{color:#858585;font-weight:600;margin-top:20px;display:block;text-align:left}
 .footer_dls_1_0_0__form input{border:none;border-bottom:1px solid #fff;padding:8px 0}
 .footer_dls_1_0_0__form textarea{border:1px solid #fff;padding:8px 10px}
 .footer_dls_1_0_0__form input,.footer_dls_1_0_0__form textarea{width:100%;margin:5px 0;background:none;color:#fff}

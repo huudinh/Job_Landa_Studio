@@ -2,7 +2,7 @@
 	include(locate_template("Module/Post/newsOther_dls_1_0_0/sass/newsOther_dls_1_0_0_css.php"));
 ?>
 <div class="newsOther_dls_1_0_0">
-	<div class="newsOther_dls_1_0_0__title">Other Products</div>
+	<div class="newsOther_dls_1_0_0__title">Sản phẩm khác</div>
 	<div class="newsOther_dls_1_0_0__line"></div>
 	<ul>
 		<?php
@@ -10,14 +10,15 @@
 		if( $related ) foreach( $related as $key => $post ) {
 			setup_postdata($post); 
 			$time = get_the_date('d/m/Y');
+			$description = get_field('description'); 
 			echo'
 				<li>
 					<div class="newsOther_dls_1_0_0__pic">
-						<a href="'.get_permalink().'"><img width="360" height="225" src="'.get_the_post_thumbnail_url(get_the_ID(),'medium').'" alt="'.get_the_title().'"></a>
+						<a href="'.get_permalink().'"><img width="360" height="225" src="/rs?w=371&h=269&src='.get_the_post_thumbnail_url(get_the_ID(),'medium').'" alt="'.get_the_title().'"></a>
 					</div>
 					<h3 class="newsOther_dls_1_0_0__tt">
-						<a href="'.get_permalink().'">Aluminium Quarzite</a>
-						<span>'.get_the_title().'</span>
+						<a href="'.get_permalink().'">'.get_the_title().'</a>
+						<span>'.$description.'</span>
 					</h3>
 				</li>
 			';	

@@ -1,7 +1,4 @@
 
-<!-- Code tracking Insight -->
-<!-- <script src="/css/js_ver2.js?t=1"></script> -->
-
 <script>
   var ref = document.referrer;
   //set cookies

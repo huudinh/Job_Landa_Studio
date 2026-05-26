@@ -3,14 +3,6 @@
         include(locate_template("Module/Home/service_dls_1_1_0/service_dls_1_1_0_css.php")); 
     }
 ?>      
-<!-- <section class="service_dls_1_1_0 ">
-    <div class="container">
-        <div class="main_dls_1_0_0__title fadeInUp load"><?php echo $field['project_title'] ?></div>
-        <div class="main_dls_1_0_0__line fadeInUp load"></div>
-        <div id="service_dls_1_1_0__content" class="service_dls_1_1_0__content fadeInUp load"></div>
-        <div class="service_dls_1_1_0__more fadeInUp load">MORE PROJECTS</div>
-    </div>
-</section> -->
 <section class="service_dls_1_1_0 ">
     <div class="container">
         <div class="main_dls_1_0_0__title"><?php echo the_title(); ?></div>
@@ -27,23 +19,28 @@
         <div class="service_dls_1_1_0__more">MORE PROJECTS</div>
     </div>
 </section>
-<script>let service_dls_1_1_0_url = ''; </script>
     
 <script>
+    console.log(1);
+
     const data = [
         <?php 
             $content = $field['data'];
             foreach( $content as $key => $image ):
+                $description = $image['description'];
+                // $description = substr("$description", 0,-1);
+                $description = trim($description);
                 echo '
                     {
                         name: "'.$image['title'].'",
                         photo: "'.$image['url'].'",
-                        des: "'.$image['description'].'",
+                        des: "'.$description.'",
                     },
                 ';
             endforeach;
         ?>
     ];
+    console.log(data);
 
     const recruitCard = (data, index) => {
     let itemStyle, textStyle;

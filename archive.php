@@ -24,6 +24,11 @@
         get_template_part('Module/Category/projectList_dls_1_0_0/projectList_dls_1_0_0');
         get_template_part('Module/Category/pagination_dls_1_0_0/pagination_dls_1_0_0');
     endif;
+
+    if ($typecate == 'price'):
+        get_template_part('Module/Category/priceList_dls_1_0_0/priceList_dls_1_0_0');
+        get_template_part('Module/Category/pagination_dls_1_0_0/pagination_dls_1_0_0');
+    endif;
 ?>
 
 <?php get_footer(); ?>

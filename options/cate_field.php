@@ -22,6 +22,7 @@ if( function_exists('acf_add_local_field_group') ):
                     'brand' => 'Group Sản Phẩm',                    
                     'news' => 'Tin Tức',                    
                     'project' => 'Dự Án',                    
+                    'price' => 'Bảng Giá',                    
                 ),
                 'default_value' => false,
                 'allow_null' => 0,

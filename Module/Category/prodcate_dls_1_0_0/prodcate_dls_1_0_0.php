@@ -1,5 +1,5 @@
 <style>
-    .prodcate_dls_1_0_0{padding:40px 0 20px 0;font-family:var(--primary-font);font-weight:600}.prodcate_dls_1_0_0__photo{gap:20px;margin:20px 0;text-align:center;display:grid;grid-template-rows:auto auto;grid-template-columns:auto auto}.prodcate_dls_1_0_0__title{position:relative;font-weight:700;font-size:18px;margin:20px 0;text-transform:uppercase}.prodcate_dls_1_0_0__name{font-weight:600;color:#fff}.prodcate_dls_1_0_0__des{color:#777}.prodcate_dls_1_0_0__pic{background-color:#ccc;overflow:hidden;margin:10px 0 15px}.prodcate_dls_1_0_0__pic img{width:100%;height:auto;display:block;transition:all .2s linear}.prodcate_dls_1_0_0__pic:hover img{filter:grayscale(0);transform:scale(1.05)}@media(max-width: 1180px){.prodcate_dls_1_0_0{padding:20px 0 20px 0}}
+    .prodcate_dls_1_0_0{padding:40px 0 20px 0;font-family:var(--primary-font);font-weight:600}.prodcate_dls_1_0_0__photo{gap:20px;margin:20px 0;text-align:center;display:grid;grid-template-rows:auto auto;grid-template-columns:49% 49%}.prodcate_dls_1_0_0__title{position:relative;font-weight:700;font-size:18px;margin:20px 0;text-transform:uppercase}.prodcate_dls_1_0_0__name{font-weight:600;color:#fff}.prodcate_dls_1_0_0__des{color:#777}.prodcate_dls_1_0_0__pic{background-color:#ccc;overflow:hidden;margin:10px 0 15px}.prodcate_dls_1_0_0__pic img{width:100%;height:auto;display:block;transition:all .2s linear}.prodcate_dls_1_0_0__pic:hover img{filter:grayscale(0);transform:scale(1.05)}@media(max-width: 1180px){.prodcate_dls_1_0_0{padding:20px 0 20px 0}}@media(max-width: 600px){.prodcate_dls_1_0_0__photo{grid-template-columns:47% 47%}}
 </style>
 
 <main class="container">
@@ -29,7 +29,7 @@
                                         echo '
                                             <a href="'.get_permalink($post->ID).'" class="prodcate_dls_1_0_0__item">
                                                 <div class="prodcate_dls_1_0_0__pic">
-                                                    <img src="'.$img.'" alt="'.get_the_title($post->ID).'">
+                                                    <img src="/rs?w=609&h=479&src='.$img.'" alt="'.get_the_title($post->ID).'">
                                                 </div>
                                                 <div class="prodcate_dls_1_0_0__name">'.get_the_title($post->ID).'</div>
                                                 <div class="prodcate_dls_1_0_0__des">'.$description.'</div>

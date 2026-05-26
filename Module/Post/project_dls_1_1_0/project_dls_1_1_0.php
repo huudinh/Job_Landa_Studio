@@ -1,11 +1,12 @@
 <?php   
-    include(locate_template("Module/Post/project_dls_1_1_0/project_dls_1_1_0_css.php")); 
+    include(locate_template("Module/Post/project_dls_1_1_0/project_dls_1_1_0_css.php"));     
 ?>      
 <style>
     @font-face {
         font-family: 'fontello';
         src: url(https://huudinh.github.io/assets/fonts/fontello.woff2) format("woff2"), url(https://huudinh.github.io/assets/fonts/fontello.woff) format("woff");
     }
+    .modal-box{max-width:80%}
 </style>
 <link rel="stylesheet" href="https://huudinh.github.io/assets/sass/icon.min.css">
 
@@ -49,9 +50,16 @@
     // component photo
     const photoCard = (data, index) => {
         (index == 0) ? className = 'project_dls_1_1_0__pic--big' : className = '';
+        if(index == 0){
+            path = '/rs?w=640&h=860&src=';
+        }else if(index < 5){
+            path = '/rs?w=320&h=420&src=';
+        }else{
+            path = '/rs?w=417&h=250&src=';
+        }
         return `
             <div class="project_dls_1_1_0__pic ${className}">
-                <img src="${data.image}" class="modal-btn" onclick="popupPhoto(dataSlide, ${index})" alt="${data.text}">
+                <img src="${path}${data.image}" class="modal-btn" onclick="popupPhoto(dataSlide, ${index})" alt="${data.text}">
             </div>
         `;
     }

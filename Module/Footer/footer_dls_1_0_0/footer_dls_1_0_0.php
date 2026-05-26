@@ -5,14 +5,14 @@
 ?>
 <footer class="footer_dls_1_0_0">
     <div class="container">
-        <div class="footer_dls_1_0_0__title">CONTACT US</div>
+        <div class="footer_dls_1_0_0__title">Liên hệ</div>
         
         <form class="footer_dls_1_0_0__wrapper" id="register-form">
             <div class="footer_dls_1_0_0__form">
-                <input type="text" name="iemail" placeholder="YOUR EMAIL">
-                <label>Comments</label>
+                <input type="text" name="iemail" placeholder="Email của bạn">
+                <label>Nội dung</label>
                 <textarea name="inote" cols="30" rows="5"></textarea>
-                <button type="submit">SEND INQUIRY</button>
+                <button type="submit">Gửi yêu cầu</button>
             </div>
         </form>
         <style>
@@ -21,12 +21,12 @@
             }
         </style>
         <div class="footer_dls_1_0_0__social">
-            <a href="#"><img width="32" height="32" src="<?php echo $path ?>images/icon-fb.svg" alt="fb"/></a>
-            <a href="#"><img width="32" height="32" src="<?php echo $path ?>images/icon-ins.svg" alt="fb"/></a>
-            <a href="#"><img width="32" height="32" src="<?php echo $path ?>images/icon-youtube.svg" alt="fb"/></a>
+            <a href="https://www.facebook.com/landastudio.vn" target="_blank" rel="nofollow"><img width="32" height="32" src="<?php echo $path ?>images/icon-fb.svg" alt="fb"/></a>
+            <a href="https://www.instagram.com/landastudio1010/" target="_blank" rel="nofollow"><img width="32" height="32" src="<?php echo $path ?>images/icon-ins.svg" alt="fb"/></a>
+            <a href="https://www.youtube.com/channel/UCIPUMXIzV6AhSGnrmQLbPlw" target="_blank" rel="nofollow"><img width="32" height="32" src="<?php echo $path ?>images/icon-youtube.svg" alt="fb"/></a>
         </div>
         <div class="footer_dls_1_0_0__logo">
-            <img width="215" height="111" src="<?php echo $path ?>images/ft-logo.png" alt="logo">
+            <img width="215" height="111" src="<?php echo $path ?>images/logo.svg" alt="logo">
         </div>
         <div class="footer_dls_1_0_0__info">
             <?php echo $field["info"] ?>

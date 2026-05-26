@@ -54,14 +54,14 @@
     &__list{
         display: flex;
         flex-wrap: wrap;
-        gap:20px 1.4%;
+        justify-content: space-between;
         img{
             max-width: 100%;
-            display:block;
         }
     }
     &__item{
-        width:32.3%;
+        width:32%;
+        margin-bottom: 10px;
     }
 }
 @media (max-width:1180px){

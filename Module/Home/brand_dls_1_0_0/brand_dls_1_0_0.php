@@ -55,6 +55,6 @@
                 </li>
             </ul>
         </div>
-        <a href="/brands/" class="brand_dls_1_0_0__more fadeInUp load">VIEW ALL</a>
+        <a href="/vi/san-pham/" class="brand_dls_1_0_0__more fadeInUp load">Xem tất cả</a>
     </div>
 </section>

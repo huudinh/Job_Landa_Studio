@@ -18,16 +18,16 @@
                 }
                 echo '
                     <'.$div.' class="header_dls_1_0_0__logo">
-                        <a href="/">
-                            <img width="240" height="78" src="'.$path.'images/logo.png" alt="logo">
+                        <a href="/vi/">
+                            <img width="240" height="78" src="'.$path.'images/logo.svg" alt="logo">
                         </a>
                     </'.$div.'>
                 ';
             ?>
             <ul class="header_dls_1_0_0__list" id="headerSideBar">
                 <div class="header_dls_1_0_0__logoMb">
-                    <a href="#">
-                        <img width="240" height="78" src="<?php echo $path ?>/images/logo.png" alt="">
+                    <a href="/vi/">
+                        <img width="240" height="78" src="<?php echo $path ?>/images/logo.svg" alt="">
                     </a>
                 </div>
                 <?php
@@ -76,10 +76,10 @@
                     }
                 ?>
             </ul>
-            <select class="header_dls_1_0_0__language en" onfocus='this.size=2;' onblur='this.size=0;' 
+            <select class="header_dls_1_0_0__language vi" onfocus='this.size=2;' onblur='this.size=0;' 
             onchange='this.size=1; this.blur(); urlHandler(this.value);'>
-                <option value="#en">English</option>
-                <option value="#vi">Tiếng Việt</option>
+                <option value="/vi">Tiếng Việt</option>
+                <option value="/en">English</option>
             </select>
             <div class="header_dls_1_0_0__bg" id="headerBg"></div>
         </div>
